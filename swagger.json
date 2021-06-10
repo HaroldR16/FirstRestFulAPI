@@ -1,0 +1,39 @@
+{
+    "swagger":"2.0",
+    "info":{
+        "version":"1.0.0",
+        "title":"RESTFUL API DOCUMENTATION FROM HELL",
+        "description":"Documentation of this api",
+        "license":{
+            "name":"MIT",
+            "url":"https://opensource.org/licenses/MIT"
+        }
+    },
+    "components":{
+        "securitySchemes":{
+            "bearerAuth":{
+                "type":"http",
+                "scheme":"bearer",
+                "bearerFormat":"JWT"
+            }
+        }
+    },
+    "security":{
+        "bearerAuth":[]
+    },
+    "host":"localhost:40000",
+    "basePath":"/api",
+    "path":{
+        "/hello":{
+            "get":{
+                "parameters":[],
+                "description":"THIS IS MY FIRST REST API",
+                "responses":{
+                    "200":{
+                        "description":"ok"
+                    }
+                }
+            }
+        }
+    }
+}
